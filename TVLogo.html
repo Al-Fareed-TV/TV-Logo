@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style type="text/css" media="all">
+            body{
+                background-color: black;
+                display: flex;
+                padding: 3rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .spinner{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                border : 3px solid white ;
+                border-bottom: 3px solid black ;
+                /*transform: rotate(-30deg);*/
+                 animation: spin 1s linear infinite;
+                 
+            }
+            @keyframes spin{
+                0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+            }
+            .spinner1{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                border : 3px solid white ;
+                border-bottom: 3px solid black ;
+                border-right: 3px solid black ;
+                animation: spin 1s linear infinite;
+                margin-left: -5rem;
+            }
+            .spinner2{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                border : 3px solid black ;
+                border-left: 3px solid white ;
+                animation: spin 1s linear infinite ;
+                margin-left: -8rem;
+
+            }
+        </style>
+    </head>
+<body>
+<div class="spinner"></div>
+<div class="spinner1"></div>
+<div class="spinner2"></div>
+</body>
+</html>
