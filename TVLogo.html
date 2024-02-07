@@ -1,60 +1,55 @@
 <html>
     <head>
         <style type="text/css" media="all">
-            body{
-                background: linear-gradient(blue, navy);
+            body {
                 display: flex;
-                padding: 3rem;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .circle1 {
+                height: 60px;
+                width: 60px;
+                border: 5px solid transparent;
+                border-radius: 50%;
+                border-left: 5px solid black;
+                transform: rotate(-50deg);
+                display: flex;
                 justify-content: center;
                 align-items: center;
             }
-            .spinner{
-                height: 50px;
-                width: 50px;
+            .circle2 {
+                height: 40px;
+                width: 40px;
+                border: 5px solid black;
                 border-radius: 50%;
-                border : 5px solid yellow ;
-                border-bottom: 5px solid transparent ;
-                animation: spin 1s linear infinite;
-                 
+                border-left: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+                transform: rotate(-95deg);
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-            @keyframes spin{
-                0% {
-      transform: rotate(0deg);
-   }
-   100% {
-      transform: rotate(360deg);
-   }
-            }
-            .spinner1{
-                height: 100px;
-                width: 100px;
+            .circle3 {
+                height: 20px;
+                width: 20px;
+                border: 5px solid black;
                 border-radius: 50%;
-                border : 5px solid yellow ;
-                border-bottom: 5px solid transparent ;
-                border-right: 5px solid transparent ;
-                animation: spin 1s linear infinite;
-                margin-left: -5rem;
-            }
-            .spinner2{
-                height: 150px;
-                width: 150px;
-                border-radius: 50%;
-                border : 5px solid transparent ;
-                border-left: 5px solid yellow ;
-                animation: spin 1s linear infinite ;
-                margin-left: -8rem;
-
-            }
-            h1{
-                color: white;
-                margin-left: 1rem;
+                color: transparent;
+                border-bottom: 5px solid transparent;
+                transform: rotate(90deg);
+                display: flex;
             }
         </style>
+        
     </head>
 <body>
-<div class="spinner"></div>
-<div class="spinner1"></div>
-<div class="spinner2"></div>
-<h1>TESTVAGRANT</h1>
+    <div class="circle1">
+        <div class="circle2">
+            <div class="circle3">
+                hi
+            </div>
+        </div>
+    </div>
 </body>
 </html>
